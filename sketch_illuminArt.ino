@@ -72,8 +72,8 @@ void loop() {
   // wait for samples to be read
   if (samplesRead) {
     for (int i = 0; i < samplesRead; i++) {
-      // check if the sound value is higher than 250 & the room is dark
-      if (sampleBuffer[i]>=250 && darkRoom ){
+      // check if the sound value is higher than 50 & the room is dark
+      if (sampleBuffer[i]>=50 && darkRoom ){
         playLEDs();
       } 
     }
